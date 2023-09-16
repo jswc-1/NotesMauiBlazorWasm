@@ -1,0 +1,14 @@
+﻿@page "/home"
+
+<div class="maui-navbar text-white">
+
+
+</div>
+
+<h1>Welcome @UserName</h1>
+<h3>Home Page from common components</h3>
+
+@code {
+    [CascadingParameter(Name = AppConstants.StorageKeys.Username)]
+    public string UserName { get; set; } = string.Empty;
+}
